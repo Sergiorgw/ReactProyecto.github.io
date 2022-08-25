@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let imagen = "craneo.jpg"
+  let nombre = "Cráneo"
+  let descripcion = "Cráneo humano hecho en impresión 3D."
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <div className='row'>
+        <div className='col md-4 offset-md-2'>
+          <img src={imagen} alt= "cráneo" className='img-fluid'/>
+        </div>
+        <div className='col-md-4'>
+          <h1>{nombre}</h1>
+          <p>{descripcion}</p>
+        </div>
+      </div>
     </div>
   );
 }
