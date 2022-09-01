@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "./images/logo3D.png";
+import logo from "../images/logo3D.png"
+import cart from "../images/cart.png"
 
 const NavBar = () => {
     return (
@@ -16,6 +17,11 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                     <a className="nav-link link_header" href="https://www.google.com.ar/">Herramientas</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link link_header" href="https://www.google.com.ar/">
+                        <img src={cart} width="50" alt="carrito"></img>
+                    </a>
                 </li>
             </ul>
         </div>
