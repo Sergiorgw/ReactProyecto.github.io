@@ -3,7 +3,7 @@ import React from "react";
 export const Title = (props) => {
     console.log(props);
     return (
-        <h1>  </h1>
+        <h1> </h1>
     );
 }
 
