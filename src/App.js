@@ -1,14 +1,13 @@
 import './App.css';
 import NavBar from './NavBar';
-import ItemListContainer from './ItemListContainer';
+import ItemDetailContainer from './ItemDetailContainer'
 
 function App() {
   
   return (
     <div className='container-fluid'>
-      <NavBar />
-      <hr />
-      <ItemListContainer />
+			<NavBar />
+			<ItemDetailContainer />
     </div>
     
   );
