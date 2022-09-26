@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ItemCount from "../ItemCount";
 import ItemList from "../ItemList";
 import { useParams } from "react-router-dom";
 
@@ -11,7 +10,7 @@ const models = [
 			"https://rgbestudio.com.ar/wp-content/uploads/2021/03/Puntera-conector-2.png",
 		title: "Cubo",
 		category: "models",
-		price:"$50",
+		price: 50,
 	},
 	{
 		id: 2,
@@ -20,7 +19,7 @@ const models = [
 			"https://rgbestudio.com.ar/wp-content/uploads/2021/04/Molde-3.png",
 		title: "Diafragma",
 		category: "models",
-		price:"$30",
+		price: 30, 
 	},
 	{
 		id: 3,
@@ -29,9 +28,11 @@ const models = [
 			"https://rgbestudio.com.ar/wp-content/uploads/2020/12/6565-768x432.png",
 		title: "Carcasa",
 		category: "tools",
-		price:"$20",
+		price: 20,
 	},
 ];
+
+
 
 export const ItemListContainer = ({ texto }) => {
 	const [data, setData] = useState([]);
@@ -52,21 +53,13 @@ export const ItemListContainer = ({ texto }) => {
 		}
 	}, [categoriaId]);
 
-	const onAdd = (quantity) => {
-		console.log(`Compraste ${quantity} unidades`);
-	};
-
 	return (
 		<>
-			<ItemCount initial={3} stock={5} onAdd={onAdd} />
 			<ItemList data={data} />
 		</>
 	);
 };
 
 export default ItemListContainer;
-
-
-
 
 

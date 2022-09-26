@@ -10,7 +10,7 @@ const models = [
 			"https://rgbestudio.com.ar/wp-content/uploads/2021/03/Puntera-conector-2.png",
 		title: "Cubo",
 		category: "models",
-		price:"$50",
+		price: 50,
 	},
 	{
 		id: 2,
@@ -19,7 +19,7 @@ const models = [
 			"https://rgbestudio.com.ar/wp-content/uploads/2021/04/Molde-3.png",
 		title: "Diafragma",
 		category: "models",
-		price:"$30",
+		price: 30,
 	},
 	{
 		id: 3,
@@ -28,7 +28,7 @@ const models = [
 			"https://rgbestudio.com.ar/wp-content/uploads/2020/12/6565-768x432.png",
 		title: "Carcasa",
 		category: "tools",
-		price:"$20",
+		price: 20,
 	},
 ];
 
